@@ -1,3 +1,4 @@
+
 from regex import F
 import streamlit as st
 import pandas as pd
@@ -152,15 +153,19 @@ img1 = Image.open("rest1.jpg")
 img2= Image.open("rest2.jpg")
 img3= Image.open("rest3.jpg")
 
+
 col1,col2,col3 = st.columns(3)
 with col1:
-    st.image('img1, width=100 ')
+    st.image(img1, width=100 )
 
 with col2:
-    st.image('img2, width=100')
+    st.image(img2, width=100)
 
 with col3:
-    st.image('img3, width=100')
+    st.image(img3, width=100)
+    
+
+   
 
 
 
