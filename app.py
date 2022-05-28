@@ -6,28 +6,22 @@ import pickle
 from PIL import Image
 import streamlit.components.v1 as components
 
-
-
 st.set_page_config(page_title="Zomato Recommendation System", page_icon=":pizza:")
 
-img = Image.open("Zomato_logo.png")
+img = Image.open("Zomato_logo.png") #defining image for zomato logo
 
 col1,col2,col3 = st.columns(3)
 with col1:
     st.write(' ')
-
 with col2:
-    st.image(img, width=100)
-
+    st.image(img, width=100)          #using coloumn to centre-align the image
 with col3:
     st.write(' ')
-
 
 st.title("ZOMATO RECOMMENDATION SYSTEM")
 
 
-
-# defining a function using a for loop that will return five recommended restaurants
+# define a function using a for loop that will return five recommended restaurants
 def reccommend(Restaurant):
     index = zomato[zomato["name"] == Restaurant].index[0]
     distances = cosine_similarities[index]
@@ -56,16 +50,16 @@ def reccommend(Restaurant):
 zomato_dict = pickle.load(open("zomato_dict2.pkl", "rb"))
 zomato = pd.DataFrame(zomato_dict)
 
+
 cosine_similarities = pickle.load(open("similarity2.pkl", "rb"))
 
+#graphics and visualization 
 st.markdown("<h1 style='text-align: center; font-size:20px ; color: #DAA520;'><i><b> 'your one stop destination to satisfy the hunger' </i></b></h1>", unsafe_allow_html=True)
-
 st.markdown('#')
-
 st.markdown(
     " **_Feeling_ _Hungry_?!!** Not sure where to order from? Do not worry, we have got your back!😉 " 
 )
-st.markdown('##')
+st.markdown('#')
 st.write(""" Many factors influence an individual’s health, such as physical exercise, sleep, nutrition, heredity and pollution. Being nutrition one of the biggest modifiable factors in our lives, small changes can have a big impact.  As Bangalore is the home for foodies, going out for no specific reason, sniffing the fresh aroma of coffee brewing in the various Darshinis and ultimately hopping into one to maybe have a crispy vada or a rava idli to go with it. With already a beaming number of 15,000 restaurants, the industry hasn't soaked yet. We see more cafes, pubs and dine-in restaurants being built every day; which gives birth to the question that how are the concerns of high real estate costs, rising food costs, shortage of quality manpower, fragmented supply chain being catered to. Detailed reports are an integral part of a personalization system. Accurate and up-to-the-minute reporting will allow you to make informed decisions about the direction of a campaign or the structure of a product page.
 """)
 st.markdown('#')
@@ -82,6 +76,7 @@ selected_zomato_name = st.selectbox(
 )
 
 # Using "with" notation
+# installing sidebar as a functional feature
 with st.sidebar:
    with st.expander("Explore the ZomaVerse!🌆"):
      st.write(""" Zomato (/zoʊmɑːtoʊ/) is an Indian multinational restaurant aggregator and food delivery company founded by **Deepinder Goyal** and **Pankaj Chaddah** in 2008.Zomato provides information, menus and user-reviews of restaurants as well as food delivery options from partner restaurants in select cities.As of 2019, the service is available in 24 countries and in more than 10,000 cities!!
@@ -147,23 +142,24 @@ if st.button("Recommend"):
         </div>"""
         )
 
-
-
+#define pictures for UI/UX
 img1 = Image.open("rest1.jpg")
 img2= Image.open("rest2.jpg")
 img3= Image.open("rest3.jpg")
+img6= Image.open("rest6.jpg")
 
-
-col1,col2,col3 = st.columns(3)
+col1,col2,col3,col6 = st.columns(4)
 with col1:
-    st.image(img1, width=100 )
-
+    st.image(img1, width=140)
 with col2:
-    st.image(img2, width=100)
-
+    st.image(img2, width=140)
 with col3:
-    st.image(img3, width=100)
-    
+    st.image(img3, width=120)
+with col6:
+    st.image(img6, width=110)  
+
+
+
 
    
 
