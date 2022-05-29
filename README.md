@@ -2,7 +2,8 @@
 
 **ABOUT THE PROJECT**
 
-**Food for thought** 
+**Food for thought!!** 
+
 This project is a restaurant recommendation system
 (RRS),which I've named Zomphy!
 RRS is an on-line system to search restaurants.Visitors can browse 
