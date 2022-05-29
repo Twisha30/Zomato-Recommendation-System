@@ -52,9 +52,11 @@ https://share.streamlit.io/twisha30/zomato-recommendation-system/main/app.py
  How to Use 4 Minute **Video Demo**- https://www.youtube.com/watch?v=GDO8eFGxkoc&t=148s
  
  **Problem Statement1**- What is the most efficient sorting algorithm to use in this scenario, and why?
+ 
 *Answer*- Quicksort, as  it requires little space & it is an in-place sorting algorithm, which means no additional storage space is needed to perform sorting. It exhibits good cache(ka-shay) locality, this makes it faster than merge sort, specially in a virtual memory environment.
 
 **Problem Statment2**- Any other algorithm that you can think of?
+
 *Answer*- I propose The infinite Monkey Theorem,which states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text, such as the complete works of William Shakespeare. In fact, the monkey would almost surely type every possible finite text an infinite number of times. The theorem can be generalized to state that any sequence of events which has a non-zero probability of happening will almost certainly eventually occur, given enough time.
 
 **RoadMap & Usage**-
