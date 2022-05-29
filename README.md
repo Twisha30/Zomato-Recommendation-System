@@ -74,8 +74,13 @@ Architectural Flow chart & How to Use Demo is present in the Project Docs & Vide
 **Contact**-
 Twisha Awasthy - twishaawasthy@gmail.com, +91 9001290890
 
+LinkedIn- https://www.linkedin.com/in/twisha-awasthy-24832720a/
+
 **About the developer**
-With a learn-it-all attitude and an answer-first and agile approach, I accept feedback with open arms, 
-take this as a learning and building journey.
+
+With a learn-it-all attitude, an answer-first and agile approach, I accept feedback with open arms, 
+take this as a learning and building journey. I am eternally thankful to the Microsoft and AceHacker Team for
+giving me the oppportunity to explore, ideate and adapt myself into this specific domain of Machine-
+Learning. Here's to never-ending hours of implementing and testing!
 
 
